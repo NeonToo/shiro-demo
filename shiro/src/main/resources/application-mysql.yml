@@ -1,0 +1,37 @@
+server:
+  port: 9001
+  
+#debug: true
+
+# Spring specifics 
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/access_control?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  http:
+    multipart.max-file-size: 5Mb
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+
+#    cluster:
+#      nodes: 
+#        127.0.0.1:6379, 127.0.0.1:7379
+#      max-redirects: 3
+    
+# WeChat
+wechat:
+  mini-app:
+    originId: gh_2975123b43ab
+    appId: wx5acf95441f889edc
+    appSecret: 31627d0470c9fa3f7c6f321255dded3b

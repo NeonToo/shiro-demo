@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    jndi-name: java:comp/env/jdbc/DefaultDB
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    multipart.max-file-size: 5Mb
+    
+# WeChat
+wechat:
+  mini-app:
+    originId: gh_2975123b43ab
+    appId: wx5acf95441f889edc
+    appSecret: 31627d0470c9fa3f7c6f321255dded3b
