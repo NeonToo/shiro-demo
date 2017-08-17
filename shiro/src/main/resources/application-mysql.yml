@@ -32,6 +32,6 @@ spring:
 # WeChat
 wechat:
   mini-app:
-    originId: gh_2975123b43ab
-    appId: wx5acf95441f889edc
-    appSecret: 31627d0470c9fa3f7c6f321255dded3b
+    originId: 
+    appId: 
+    appSecret: 
